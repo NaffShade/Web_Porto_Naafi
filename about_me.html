@@ -1,106 +1,308 @@
 <!doctype html>
 <html lang="id">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Me | My Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Naafi'</title>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23111113'/%3E%3Ctext x='47' y='69' font-family='Georgia, serif' font-style='italic' font-weight='bold' font-size='58' fill='%23ffffff' text-anchor='middle'%3EN%3C/text%3E%3Ccircle cx='74' cy='66' r='7' fill='%233b82f6'/%3E%3Crect x='79' y='53' width='4' height='4' fill='%233b82f6'/%3E%3C/svg%3E"
     />
-    <link rel="icon" type="image/png" href="images/foto_naafi.png" />
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="style/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container">
-        <span class="navbar-brand">MY PORTFOLIO</span>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="about_me.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="education.html">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="skills.html">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <header class="top-brand-bar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html" class="brand-signature">Naafi'<span>.</span></a>
+        <span class="small text-secondary fw-semibold">About Me</span>
       </div>
-    </nav>
-    <main>
-      <div class="container">
-        <header
-          class="page-header animate__animated animate__fadeInDown animate-delay-0.8s"
-        >
-          <h1>About Me</h1>
-          <p>
-            Kenalan lebih dekat dengan saya dan hal-hal yang sedang saya
-            pelajari.
-          </p>
-        </header>
+    </header>
 
-        <div class="row g-4">
-          <div class="col-lg-7">
-            <div
-              class="section-card animate__animated animate__fadeInLeft"
-              style="animation-delay: 1s"
-            >
-              <h3>Who am I?</h3>
-              <p>
-                Halo oii, saya <strong>Muhammad Naafi' Badiilah</strong>. asal saya
-                dari Kabupaten Lamongan, dan kini saya merupakan seorang
-                mahasiswa Politeknik Elektronika Negeri Surabaya (PENS) yang
-                sedang belajar dunia teknologi dan pemrograman.
-              </p>
-              <p>
-                Saat ini saya sedang mengembangkan kemampuan di bidang
-                programming, web development, dan game development. Saya suka
-                mencoba hal baru dan belajar lewat proyek-proyek kecil.
-              </p>
-              <p>
-                Portfolio ini dibuat sebagai tempat untuk memperkenalkan diri
-                sekaligus mendokumentasikan perjalanan belajar saya.
-              </p>
+    <main class="container py-4 py-md-5">
+      <section class="row align-items-center g-5 mb-5">
+        <!-- TUMPUKAN FOTO POLAROID INTERAKTIF -->
+        <div class="col-lg-5">
+          <div
+            class="polaroid-stack"
+            id="polaroidStack"
+            title="Klik untuk ganti kartu foto"
+          >
+            <!-- KARTU POLAROID 1 -->
+            <div class="polaroid-item" data-pos="0">
+              <div class="photo-slot-empty" style="aspect-ratio: 1/1">
+                <img src="images/mc.jpeg" alt="Naafi Portrait" />
+              </div>
+              <div class="polaroid-caption">
+                <span>Lamongan, ID</span>
+                <span>01 / 03</span>
+              </div>
+            </div>
+
+            <!-- KARTU POLAROID 2 -->
+            <div class="polaroid-item" data-pos="1">
+              <div class="photo-slot-empty" style="aspect-ratio: 1/1">
+                <img src="images/paskib.jpeg" alt="Aktivitas Kampus PENS" />
+              </div>
+              <div class="polaroid-caption">
+                <span>Lamongan, ID</span>
+                <span>02 / 03</span>
+              </div>
+            </div>
+
+            <!-- KARTU POLAROID 3 -->
+            <div class="polaroid-item" data-pos="2">
+              <div class="photo-slot-empty" style="aspect-ratio: 1/1">
+                <img src="images/selfie.jpeg" alt="Game Development" />
+              </div>
+              <div class="polaroid-caption">
+                <span>Surabaya, ID</span>
+                <span>03 / 03</span>
+              </div>
             </div>
           </div>
-          <div class="col-lg-5">
-            <div
-              class="section-card animate__animated animate__fadeInRight"
-              style="animation-delay: 1.8s"
-            >
-              <h3>Interests</h3>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item bg-transparent">Web Development</li>
-                <li class="list-group-item bg-transparent">Programming</li>
-                <li class="list-group-item bg-transparent">Game Development</li>
-                <li class="list-group-item bg-transparent">Technology</li>
-              </ul>
+          <p class="text-center small text-muted mt-3 mb-0">
+            Klik tumpukan kartu di atas untuk melihat foto berikutnya.
+          </p>
+        </div>
+
+        <!-- CERITA PERSONAL NAAFI' -->
+        <div class="col-lg-7">
+          <span class="section-tag">Who I am _</span>
+          <h1 class="fw-bold mb-3">
+            Halo! Saya
+            <span class="font-editorial">Muhammad Naafi'</span> Badiilah.
+          </h1>
+          <p class="text-secondary">
+            Saya berasal dari Kabupaten Lamongan, Jawa Timur, dan saat ini
+            sedang menempuh pendidikan di program studi
+            <strong
+              >D4 Teknik Informatika, Politeknik Elektronika Negeri Surabaya
+              (PENS)</strong
+            >.
+          </p>
+          <p class="text-secondary mb-4">
+            Ketertarikan utama saya berada di persimpangan antara
+            <strong>pengembangan web</strong>,
+            <strong>pemrograman inti</strong>, dan
+            <strong>pembuatan game 2D</strong>. Saya percaya cara terbaik
+            memahami teknologi adalah dengan langsung membangun proyek
+            nyata—mulai dari merancang halaman web portofolio hingga merilis
+            game <em>MetDodge</em> dan merakit mekanik <em>Action RPG</em>.
+          </p>
+
+          <!-- INTERESTS & TOOLS GRID -->
+          <span class="section-tag">Interests & Focus _</span>
+          <div class="row g-3 mt-1">
+            <div class="col-sm-6">
+              <div class="editorial-card py-3">
+                <div class="fw-bold">Web Development</div>
+                <small class="text-secondary"
+                  >HTML5, CSS3, Bootstrap, JavaScript DOM</small
+                >
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="editorial-card py-3">
+                <div class="fw-bold">Game Development</div>
+                <small class="text-secondary"
+                  >Godot Engine 4, GDScript, 2D Pixel Art</small
+                >
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="editorial-card py-3">
+                <div class="fw-bold">Programming Logic</div>
+                <small class="text-secondary"
+                  >C Language, Problem Solving, Git &amp; GitHub</small
+                >
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="editorial-card py-3">
+                <div class="fw-bold">Language &amp; Culture</div>
+                <small class="text-secondary"
+                  >Japanese Storytelling &amp; Public Speaking</small
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
-    <footer>
-      <div class="container text-center">© 2026 Muhammad Naafi' Badiilah</div>
+
+    <!-- DARK CTA FOOTER -->
+    <footer class="dark-cta-footer text-center">
+      <div class="container">
+        <p
+          class="small text-uppercase text-secondary fw-semibold mb-2"
+          style="letter-spacing: 0.08em"
+        >
+          Ready for the work?
+        </p>
+        <h2 class="display-5 fw-bold mb-4">
+          Let’s <span class="font-editorial">talk.</span>
+        </h2>
+        <div class="collab-panel text-start mb-4">
+          <div
+            class="d-flex align-items-center gap-2 small text-secondary mb-3"
+          >
+            <span class="status-dot"></span>
+            <span
+              >Currently open for collaboration &amp; project discussion</span
+            >
+          </div>
+          <div class="email-copy-box mb-3">
+            <span class="text-white text-truncate">nafi9760@gmail.com</span>
+            <button
+              type="button"
+              class="btn-copy-email"
+              data-email="nafi9760@gmail.com"
+            >
+              Copy
+            </button>
+          </div>
+          <div class="d-flex flex-wrap gap-2 justify-content-center">
+            <a href="contact.html" class="social-pill-dark"
+              >Send a Postcard &rarr;</a
+            >
+            <a
+              href="https://github.com/NaffShade"
+              target="_blank"
+              rel="noopener"
+              class="social-pill-dark"
+              >GitHub</a
+            >
+            <a
+              href="https://www.instagram.com/_naffinite/"
+              target="_blank"
+              rel="noopener"
+              class="social-pill-dark"
+              >Instagram</a
+            >
+            <a
+              href="https://www.tiktok.com/@villainterkenal"
+              target="_blank"
+              rel="noopener"
+              class="social-pill-dark"
+              >TikTok</a
+            >
+          </div>
+        </div>
+        <p class="small text-secondary mb-0">
+          &copy; 2026 Muhammad Naafi' Badiilah.
+        </p>
+      </div>
     </footer>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FLOATING DOCK NAVBAR -->
+    <nav class="floating-dock" aria-label="Main Navigation">
+      <a
+        href="index.html"
+        class="dock-link"
+        data-label="Home"
+        aria-label="Home"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" />
+        </svg>
+      </a>
+      <a
+        href="about_me.html"
+        class="dock-link"
+        data-label="About Me"
+        aria-label="About Me"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+      </a>
+      <a
+        href="education.html"
+        class="dock-link"
+        data-label="Education"
+        aria-label="Education"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+          <path d="M6 12v5c3 3 9 3 12 0v-5" />
+        </svg>
+      </a>
+      <a
+        href="skills.html"
+        class="dock-link"
+        data-label="Projects & Skills"
+        aria-label="Projects & Skills"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+          />
+        </svg>
+      </a>
+      <a
+        href="contact.html"
+        class="dock-link"
+        data-label="Contact"
+        aria-label="Contact"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+          />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
+      </a>
+    </nav>
+
+    <script src="js/interaktif.js"></script>
   </body>
 </html>

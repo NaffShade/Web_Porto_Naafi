@@ -1,127 +1,336 @@
 <!doctype html>
 <html lang="id">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact | My Portfolio</title>
-    <link rel="icon" type="image/png" href="images/foto_naafi.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Naafi'</title>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23111113'/%3E%3Ctext x='47' y='69' font-family='Georgia, serif' font-style='italic' font-weight='bold' font-size='58' fill='%23ffffff' text-anchor='middle'%3EN%3C/text%3E%3Ccircle cx='74' cy='66' r='7' fill='%233b82f6'/%3E%3Crect x='79' y='53' width='4' height='4' fill='%233b82f6'/%3E%3C/svg%3E"
     />
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="style/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">MY PORTFOLIO</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about_me.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="education.html">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="skills.html">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <header class="top-brand-bar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html" class="brand-signature">Naafi'<span>.</span></a>
+        <span class="small text-secondary fw-semibold">Contact</span>
       </div>
-    </nav>
-    <main>
-      <div class="container">
-        <header
-          class="page-header animate__animated animate__fadeInDown"
-          style="animation-delay: 0.4s"
-        >
-          <h1>Contact</h1>
-          <p>Terhubung dengan saya melalui platform di bawah ini.</p>
-        </header>
-        <div
-          class="row justify-content-center g-4 animate__animated animate__fadeInUp"
-          style="animation-delay: 1.3s"
-        >
-          <div class="col-lg-6">
-            <div class="section-card text-center p-4 p-md-5">
-              <div>
-                <h3 class="mb-3">Get in Touch</h3>
-                <p class="text-muted mb-4">
-                  Silakan pilih tautan di bawah untuk berdiskusi atau
-                  berkenalan.
-                </p>
-                <!-- Daftar Tombol -->
-                <div class="d-grid gap-3 mx-auto" style="max-width: 400px">
-                  <div
-                    class="animate__animated animate__pulse"
-                    style="animation-delay: 2s"
-                  >
-                    <a href="mailto:nafi9760@gmail.com" class="social-btn">
-                      <span>✉ &nbsp; Email : nafi9760@gmail.com</span>
-                    </a>
-                  </div>
-                  <div
-                    class="animate__animated animate__pulse"
-                    style="animation-delay: 2.8s"
-                  >
-                    <a
-                      href="https://www.instagram.com/_naffinite/"
-                      target="_blank"
-                      class="social-btn"
-                    >
-                      <span>📷 &nbsp; Instagram : @_naffinite</span>
-                    </a>
-                  </div>
-                  <div
-                    class="animate__animated animate__pulse"
-                    style="animation-delay: 3.6s"
-                  >
-                    <a
-                      href="https://github.com/NaffShade"
-                      target="_blank"
-                      class="social-btn"
-                    >
-                      <span>💻 &nbsp; GitHub : NaffShade</span>
-                    </a>
-                  </div>
-                  <div
-                    class="animate__animated animate__pulse"
-                    style="animation-delay: 4.4s"
-                  >
-                    <a
-                      href="https://www.tiktok.com/@villainterkenal"
-                      target="_blank"
-                      class="social-btn"
-                    >
-                      <span>🎬 &nbsp; TikTok</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
+    </header>
+
+    <main class="container py-4 py-md-5" style="max-width: 780px">
+      <div class="mb-4">
+        <span class="section-tag">Get in touch _</span>
+        <h1 class="fw-bold">
+          A little note, <span class="font-editorial">a new beginning.</span>
+        </h1>
+      </div>
+
+      <!-- KARTU SURAT (POSTCARD FORM) -->
+      <div class="postcard-box mb-4">
+        <div class="postcard-stamp">Hello!</div>
+        <div class="small text-muted fw-semibold mb-3">
+          To: Muhammad Naafi' Badiilah
+        </div>
+
+        <form id="postcardForm">
+          <!-- Pilihan Topik Interaktif -->
+          <div class="mb-3">
+            <label class="form-label small fw-semibold text-secondary"
+              >Pilih Topik Obrolan</label
+            >
+            <div class="d-flex flex-wrap gap-2">
+              <button
+                type="button"
+                class="topic-chip active"
+                data-topic="Game Collaboration"
+              >
+                Game Collaboration
+              </button>
+              <button type="button" class="topic-chip" data-topic="Web Project">
+                Web Project
+              </button>
+              <button
+                type="button"
+                class="topic-chip"
+                data-topic="Campus & Study"
+              >
+                Campus &amp; Study
+              </button>
+              <button
+                type="button"
+                class="topic-chip"
+                data-topic="Just Saying Hi"
+              >
+                Just Saying Hi
+              </button>
             </div>
           </div>
+
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <label for="senderName" class="form-label small fw-semibold"
+                >Nama Kamu</label
+              >
+              <input
+                type="text"
+                id="senderName"
+                class="form-control rounded-3"
+                placeholder="Masukkan namamu"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="senderEmail" class="form-label small fw-semibold"
+                >Email Kamu</label
+              >
+              <input
+                type="email"
+                id="senderEmail"
+                class="form-control rounded-3"
+                placeholder="nama@email.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label for="senderMessage" class="form-label small fw-semibold"
+              >Pesan</label
+            >
+            <textarea
+              id="senderMessage"
+              rows="4"
+              class="form-control rounded-3"
+              placeholder="Ceritakan ide proyek, kolaborasi game, atau sapaan singkat..."
+              required
+            ></textarea>
+          </div>
+
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-between gap-2"
+          >
+            <button type="submit" class="btn-ink">
+              Open Email Draft &nearr;
+            </button>
+            <small class="text-muted"
+              >Otomatis membuka aplikasi emailmu siap kirim.</small
+            >
+          </div>
+        </form>
+      </div>
+
+      <!-- KONTAK LANGSUNG & SOSIAL MEDIA ASLI NAAFI' -->
+      <div class="editorial-card">
+        <div class="small fw-semibold text-secondary mb-2">
+          Atau hubungi langsung melalui kanal berikut:
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+          <button
+            type="button"
+            class="btn-outline-ink btn-copy-email text-dark"
+            data-email="nafi9760@gmail.com"
+          >
+            Copy: nafi9760@gmail.com
+          </button>
+          <a
+            href="https://www.instagram.com/_naffinite/"
+            target="_blank"
+            rel="noopener"
+            class="btn-outline-ink"
+          >
+            Instagram (@_naffinite)
+          </a>
+          <a
+            href="https://github.com/NaffShade"
+            target="_blank"
+            rel="noopener"
+            class="btn-outline-ink"
+          >
+            GitHub (NaffShade)
+          </a>
+          <a
+            href="https://www.tiktok.com/@villainterkenal"
+            target="_blank"
+            rel="noopener"
+            class="btn-outline-ink"
+          >
+            TikTok (@villainterkenal)
+          </a>
         </div>
       </div>
     </main>
-    <footer>
-      <div class="container text-center">© 2026 Muhammad Naafi' Badiilah</div>
+
+    <!-- DARK CTA FOOTER -->
+    <footer class="dark-cta-footer text-center">
+      <div class="container">
+        <p
+          class="small text-uppercase text-secondary fw-semibold mb-2"
+          style="letter-spacing: 0.08em"
+        >
+          Ready for the work?
+        </p>
+        <h2 class="display-5 fw-bold mb-4">
+          Let’s <span class="font-editorial">talk.</span>
+        </h2>
+        <div class="collab-panel text-start mb-4">
+          <div
+            class="d-flex align-items-center gap-2 small text-secondary mb-3"
+          >
+            <span class="status-dot"></span>
+            <span
+              >Currently open for collaboration &amp; project discussion</span
+            >
+          </div>
+          <div class="email-copy-box mb-3">
+            <span class="text-white text-truncate">nafi9760@gmail.com</span>
+            <button
+              type="button"
+              class="btn-copy-email"
+              data-email="nafi9760@gmail.com"
+            >
+              Copy
+            </button>
+          </div>
+          <div class="d-flex flex-wrap gap-2 justify-content-center">
+            <a
+              href="https://github.com/NaffShade"
+              target="_blank"
+              rel="noopener"
+              class="social-pill-dark"
+              >GitHub</a
+            >
+            <a
+              href="https://www.instagram.com/_naffinite/"
+              target="_blank"
+              rel="noopener"
+              class="social-pill-dark"
+              >Instagram</a
+            >
+            <a
+              href="https://www.tiktok.com/@villainterkenal"
+              target="_blank"
+              rel="noopener"
+              class="social-pill-dark"
+              >TikTok</a
+            >
+          </div>
+        </div>
+        <p class="small text-secondary mb-0">
+          &copy; 2026 Muhammad Naafi' Badiilah.
+        </p>
+      </div>
     </footer>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FLOATING DOCK NAVBAR -->
+    <nav class="floating-dock" aria-label="Main Navigation">
+      <a
+        href="index.html"
+        class="dock-link"
+        data-label="Home"
+        aria-label="Home"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" />
+        </svg>
+      </a>
+      <a
+        href="about_me.html"
+        class="dock-link"
+        data-label="About Me"
+        aria-label="About Me"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+      </a>
+      <a
+        href="education.html"
+        class="dock-link"
+        data-label="Education"
+        aria-label="Education"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+          <path d="M6 12v5c3 3 9 3 12 0v-5" />
+        </svg>
+      </a>
+      <a
+        href="skills.html"
+        class="dock-link"
+        data-label="Projects & Skills"
+        aria-label="Projects & Skills"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+          />
+        </svg>
+      </a>
+      <a
+        href="contact.html"
+        class="dock-link"
+        data-label="Contact"
+        aria-label="Contact"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+          />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
+      </a>
+    </nav>
+
+    <script src="js/interaktif.js"></script>
   </body>
 </html>

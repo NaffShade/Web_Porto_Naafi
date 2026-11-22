@@ -1,145 +1,411 @@
 <!doctype html>
 <html lang="id">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Skills | My Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects &amp; Skills | Naafi'</title>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23111113'/%3E%3Ctext x='47' y='69' font-family='Georgia, serif' font-style='italic' font-weight='bold' font-size='58' fill='%23ffffff' text-anchor='middle'%3EN%3C/text%3E%3Ccircle cx='74' cy='66' r='7' fill='%233b82f6'/%3E%3Crect x='79' y='53' width='4' height='4' fill='%233b82f6'/%3E%3C/svg%3E"
     />
-    <link rel="icon" type="image/png" href="images/foto_naafi.png" />
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="style/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container">
-        <span class="navbar-brand" href="index.html">MY PORTFOLIO</span>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+    <header class="top-brand-bar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html" class="brand-signature">Naafi'<span>.</span></a>
+        <span class="small text-secondary fw-semibold"
+          >Projects &amp; Skills</span
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about_me.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="education.html">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="skills.html">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </nav>
-    <main>
-      <div class="container">
-        <header
-          class="page-header animate__animated animate__fadeInDown"
-          style="animation-delay: 0.4s"
-        >
-          <h1>Skills</h1>
-          <p>Beberapa kemampuan yang sedang saya pelajari dan kembangkan.</p>
-        </header>
+    </header>
+
+    <main class="container py-4 py-md-5">
+      <!-- BAGIAN 1: SELECTED PROJECTS -->
+      <section class="mb-5">
+        <span class="section-tag">My work _</span>
+        <h1 class="fw-bold mb-2">
+          Selected <span class="font-editorial">projects.</span>
+        </h1>
+        <p class="text-secondary mb-4">
+          Arahkan kursor atau ketuk folder untuk melihat detail proyek dan
+          tautan demo.
+        </p>
+
         <div class="row g-4">
-          <div class="col-md-6">
+          <!-- Folder 1: MetDodge -->
+          <div class="col-lg-4">
             <div
-              class="section-card skill-card animate__animated animate__fadeInLeft"
-              style="animation-delay: 1.3s"
+              class="folder-card folder-blue h-100 d-flex flex-column justify-content-between"
             >
-              <div class="skill-icon">C</div>
-              <h3>C Programming</h3>
-              <p>
-                Memahami dasar syntax, percabangan, perulangan, fungsi, dan
-                konsep pemrograman dasar.
-              </p>
-              <div class="progress mt-3">
-                <div class="progress-bar" style="width: 40%"></div>
+              <div class="folder-sheet">
+                <div
+                  class="d-flex justify-content-between small text-muted fw-semibold mb-2"
+                >
+                  <span>Project 01</span>
+                  <span>Godot 4 &bull; HTML5</span>
+                </div>
+                <h4 class="fw-bold mb-2">MetDodge</h4>
+                <p class="small text-secondary mb-3">
+                  Game 2D arcade bertempo cepat di mana pemain mengendalikan
+                  pesawat luar angkasa untuk menghindari meteor dengan sistem
+                  skor.
+                </p>
+                <!-- Ganti href="#" di bawah dengan link langsung halaman itch.io MetDodge milikmu -->
+                <a
+                  href="https://naffshade.itch.io/metdodge"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-sm btn-dark rounded-pill px-3"
+                >
+                  Play on itch.io &nearr;
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div
-              class="section-card skill-card animate__animated animate__fadeInRight"
-              style="animation-delay: 2.3s"
-            >
-              <div class="skill-icon">&lt;/&gt;</div>
-              <h3>HTML & CSS</h3>
-              <p>
-                Membuat struktur halaman web, styling, layout, dan responsive
-                design.
-              </p>
-              <div class="progress mt-3">
-                <div class="progress-bar" style="width: 75%"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div
-              class="section-card skill-card animate__animated animate__fadeInLeft"
-              style="animation-delay: 3.3s"
-            >
-              <div class="skill-icon">B</div>
-              <h3>Bootstrap</h3>
-              <p>
-                Menggunakan komponen dan grid Bootstrap untuk membuat website
-                responsive.
-              </p>
-              <div class="progress mt-3">
-                <div class="progress-bar" style="width: 65%"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div
-              class="section-card skill-card animate__animated animate__fadeInRight"
-              style="animation-delay: 4.3s"
-            >
-              <svg
-                class="skill-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="48"
-                height="48"
-                fill="currentColor"
-                class="bi bi-controller"
-                viewBox="0 0 16 16"
+              <div
+                class="d-flex justify-content-between align-items-center pt-1"
               >
-                <path
-                  d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"
-                />
-                <path
-                  d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"
-                />
-              </svg>
-              <h3>Unity & Godot</h3>
-              <p>
-                Sedang belajar dasar game development dan workflow menggunakan
-                Unity dan Godot engine.
-              </p>
-              <div class="progress mt-3">
-                <div class="progress-bar" style="width: 45%"></div>
+                <span class="folder-badge">2D Arcade Game</span>
+                <span class="small fw-semibold">Published</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Folder 2: Action RPG Project -->
+          <div class="col-lg-4">
+            <div
+              class="folder-card folder-purple h-100 d-flex flex-column justify-content-between"
+            >
+              <div class="folder-sheet">
+                <div
+                  class="d-flex justify-content-between small text-muted fw-semibold mb-2"
+                >
+                  <span>Project 02</span>
+                  <span>Godot 4 &bull; GDScript</span>
+                </div>
+                <h4 class="fw-bold mb-2">Action RPG Project</h4>
+                <p class="small text-secondary mb-3">
+                  Proyek eksplorasi game 2D pixel art action RPG dengan
+                  pergerakan 8-arah, sistem serangan jarak dekat, manajemen
+                  state karakter, dan antarmuka HUD.
+                </p>
+                <a
+                  href="https://github.com/NaffShade"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-sm btn-outline-dark rounded-pill px-3"
+                >
+                  View Progress on GitHub &nearr;
+                </a>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center pt-1"
+              >
+                <span class="folder-badge">Action RPG</span>
+                <span class="small fw-semibold">In Progress</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Folder 3: Web Portfolio -->
+          <div class="col-lg-4">
+            <div
+              class="folder-card folder-emerald h-100 d-flex flex-column justify-content-between"
+            >
+              <div class="folder-sheet">
+                <div
+                  class="d-flex justify-content-between small text-muted fw-semibold mb-2"
+                >
+                  <span>Project 03</span>
+                  <span>HTML &bull; CSS &bull; Bootstrap &bull; JS</span>
+                </div>
+                <h4 class="fw-bold mb-2">Web_Porto_Naafi</h4>
+                <p class="small text-secondary mb-3">
+                  Website portofolio multi-halaman bergaya editorial dengan
+                  <em>floating dock</em> navigasi otomatis, tumpukan foto
+                  interaktif, dan kartu surat email draft tanpa
+                  <em>backend</em>.
+                </p>
+                <a
+                  href="https://github.com/naffshade/Web_Porto_Naafi"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-sm btn-outline-dark rounded-pill px-3"
+                >
+                  Source Repository &nearr;
+                </a>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center pt-1"
+              >
+                <span class="folder-badge">Web Portfolio</span>
+                <span class="small fw-semibold">Live</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- BAGIAN 2: TECHNICAL SKILLS -->
+      <section class="pt-3">
+        <span class="section-tag">Tools I build with _</span>
+        <h2 class="fw-bold mb-4">
+          Technical <span class="font-editorial">skills.</span>
+        </h2>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="editorial-card h-100">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <h5 class="fw-bold mb-0">C Programming</h5>
+                <span class="badge bg-light text-dark border">Core Logic</span>
+              </div>
+              <p class="small text-secondary mb-3">
+                Memahami sintaks dasar, percabangan, perulangan, fungsi modular,
+                array, dan manipulasi pointer.
+              </p>
+              <div class="progress" style="height: 6px">
+                <div class="progress-bar bg-dark" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="editorial-card h-100">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <h5 class="fw-bold mb-0">HTML5 &amp; CSS3</h5>
+                <span class="badge bg-light text-dark border">Frontend</span>
+              </div>
+              <p class="small text-secondary mb-3">
+                Menyusun struktur semantik, Flexbox, CSS Grid, variabel tema,
+                animasi transisi, dan tata letak responsif.
+              </p>
+              <div class="progress" style="height: 6px">
+                <div class="progress-bar bg-primary" style="width: 50%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="editorial-card h-100">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <h5 class="fw-bold mb-0">Bootstrap &amp; Vanilla JS</h5>
+                <span class="badge bg-light text-dark border"
+                  >UI &amp; Interaction</span
+                >
+              </div>
+              <p class="small text-secondary mb-3">
+                Memanfaatkan sistem grid responsif Bootstrap serta manipulasi
+                DOM dan Event Listener JavaScript murni.
+              </p>
+              <div class="progress" style="height: 6px">
+                <div class="progress-bar bg-success" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="editorial-card h-100">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <h5 class="fw-bold mb-0">Godot Engine &amp; GDScript</h5>
+                <span class="badge bg-light text-dark border">Game Dev</span>
+              </div>
+              <p class="small text-secondary mb-3">
+                Membangun scene 2D, node hierarchy, collision, animasi sprite,
+                serta ekspor HTML5 untuk web &amp; itch.io.
+              </p>
+              <div class="progress" style="height: 6px">
+                <div
+                  class="progress-bar"
+                  style="width: 70%; background-color: #8b5cf6"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-      <div class="container text-center">© 2026 Muhammad Naafi' Badiilah</div>
+
+    <!-- DARK CTA FOOTER -->
+    <footer class="dark-cta-footer text-center">
+      <div class="container">
+        <p
+          class="small text-uppercase text-secondary fw-semibold mb-2"
+          style="letter-spacing: 0.08em"
+        >
+          Ready for the work?
+        </p>
+        <h2 class="display-5 fw-bold mb-4">
+          Let’s <span class="font-editorial">talk.</span>
+        </h2>
+        <div class="collab-panel text-start mb-4">
+          <div
+            class="d-flex align-items-center gap-2 small text-secondary mb-3"
+          >
+            <span class="status-dot"></span>
+            <span
+              >Currently open for collaboration &amp; project discussion</span
+            >
+          </div>
+          <div class="email-copy-box mb-3">
+            <span class="text-white text-truncate">nafi9760@gmail.com</span>
+            <button
+              type="button"
+              class="btn-copy-email"
+              data-email="nafi9760@gmail.com"
+            >
+              Copy
+            </button>
+          </div>
+          <div class="d-flex flex-wrap gap-2 justify-content-center">
+            <a href="contact.html" class="social-pill-dark"
+              >Send a Postcard &rarr;</a
+            >
+            <a
+              href="https://github.com/NaffShade"
+              target="_blank"
+              rel="noopener"
+              class="social-pill-dark"
+              >GitHub</a
+            >
+            <a
+              href="https://www.instagram.com/_naffinite/"
+              target="_blank"
+              rel="noopener"
+              class="social-pill-dark"
+              >Instagram</a
+            >
+            <a
+              href="https://www.tiktok.com/@villainterkenal"
+              target="_blank"
+              rel="noopener"
+              class="social-pill-dark"
+              >TikTok</a
+            >
+          </div>
+        </div>
+        <p class="small text-secondary mb-0">
+          &copy; 2026 Muhammad Naafi' Badiilah.
+        </p>
+      </div>
     </footer>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FLOATING DOCK NAVBAR -->
+    <nav class="floating-dock" aria-label="Main Navigation">
+      <a
+        href="index.html"
+        class="dock-link"
+        data-label="Home"
+        aria-label="Home"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" />
+        </svg>
+      </a>
+      <a
+        href="about_me.html"
+        class="dock-link"
+        data-label="About Me"
+        aria-label="About Me"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+      </a>
+      <a
+        href="education.html"
+        class="dock-link"
+        data-label="Education"
+        aria-label="Education"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+          <path d="M6 12v5c3 3 9 3 12 0v-5" />
+        </svg>
+      </a>
+      <a
+        href="skills.html"
+        class="dock-link"
+        data-label="Projects & Skills"
+        aria-label="Projects & Skills"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+          />
+        </svg>
+      </a>
+      <a
+        href="contact.html"
+        class="dock-link"
+        data-label="Contact"
+        aria-label="Contact"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+          />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
+      </a>
+    </nav>
+
+    <script src="js/interaktif.js"></script>
   </body>
 </html>
